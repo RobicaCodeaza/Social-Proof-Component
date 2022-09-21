@@ -24,6 +24,118 @@ body {
 }
 
 .section-social {
-  height: 100vh;
-  background: aqua;
+  min-height: 100vh;
+  background-color: #fff;
+  background-image: url(/images/bg-pattern-top-desktop.svg),
+    url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0vw top 0vh, bottom 0vh right 0vw;
+  display: flex;
+  padding: 4.4rem;
+  align-items: center;
+}
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4.4rem;
+  column-gap: 3.2rem;
+}
+/* TOP */
+
+/* TOP LEFT CONTENT */
+.product-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.header {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--Very-Dark-Magenta);
+}
+.product-description {
+  font-size: 2.2rem;
+  line-height: 1.6;
+  color: var(--Soft-Pink);
+}
+/* TOP RIGHT CONTENT */
+.product-reviews {
+  grid-column: span 2;
+  justify-self: flex-end;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+.list-item {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  padding: 2rem 6rem;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 1.2rem;
+}
+.list-item:nth-child(1) {
+  transform: translateX(-24%);
+}
+.list-item:nth-child(2) {
+  transform: translatex(-12%);
+}
+.list-item:nth-child(3) {
+  transform: translateX(0%);
+}
+.rated {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+}
+/* BOTTOM */
+
+.testimonial-box {
+  padding: 4.4rem;
+  background-color: var(--Very-Dark-Magenta);
+  color: var(--Light-Grayish-Magenta);
+  border-radius: 1.2rem;
+}
+.testimonial-box:nth-child(3) {
+  transform: translateY(0%);
+}
+.testimonial-box:nth-child(4) {
+  transform: translateY(7%);
+}
+.testimonial-box:nth-child(5) {
+  transform: translateY(14%);
+}
+.person-details {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.img-person {
+  width: 5rem;
+  border-radius: 50%;
+}
+.person-details span {
+  display: block;
+}
+.name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.verify {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--Soft-Pink);
+}
+blockquote {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 500;
 }
