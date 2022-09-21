@@ -11,6 +11,12 @@
 }
 
 @media (max-width: 36em) {
+  .section-social {
+    background-image: url(/images/bg-pattern-top-mobile.svg),
+      url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 0vw top 0vh, bottom 0vh right 0vw;
+  }
   .container {
     display: flex;
     flex-direction: column;
